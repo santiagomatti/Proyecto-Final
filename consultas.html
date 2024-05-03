@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muffcakes • Consultas</title>
+    <link rel="shortcut icon" type="image/jpg" href="media/icono.png"/>
+    <meta name="description" content="Muffcakes es una pagina donde encontraras recetas de Muffins y Cupcakes por igual de la mejor calidad y gustos posibles.">
+    <meta name="keywords" content="Muffins, Cupcakes, Muffcakes, Recetas, Dulce, Salado">
+    <link rel="stylesheet" href="styles/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <!--Inicio Header - Incio General-->
+
+    <header>
+
+        <!--NavBar de Bootstrap-->
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="media/logo-muffcakes.png" alt="Logo" height="50px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="informacion.html">Información</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Recetas</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="recetas.html">Ver todas</a></li>
+                                <li><a class="dropdown-item" href="recetas/muffins.html">Muffins</a></li>
+                                <li><a class="dropdown-item" href="recetas/cupcakes.html">Cupcakes</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="terminos.html">Términos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="consultas.html">Consultas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Fin Header - Inicio Portada-->
+
+    <div class="portada">
+        <div class="titulo">
+          <h3>Muffcakes</h3>
+          <h1>Consultas</h1>
+        </div>
+        <div class="imagen">
+          <img src="media/consultas.jpg" alt="Portada página de Consultas">
+        </div>
+    </div>
+
+    <div class="trianguloPortada">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon fill="#FFFFFF" points="0,100 100,0 100,100"></polygon>
+        </svg>
+    </div>
+
+    <!--Fin Portada - Inicio Formulario-->
+
+    <div class="formulario">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h2>Formulario para consultas</h2>
+                    <p>Completá el formulario con tus consultas para que podamos ayudarte en lo que necesites! Muchas gracias.</p>
+                    <br>
+                    <form method="POST" enctype="application/x-www-form-urlencoded">
+                        <div class="form">
+                            <label for="name">Nombre*  y Apellido</label>
+                                <input type="text" id="name" name="name" value="" required>
+                            <label for="email">Email*</label>
+                                <input type="email" id="email" name="email" value="" required>
+                            <label for="tel">Teléfono</label>
+                                <input type="tel" id="tel" name="tel" value="">
+                            <label for="asunto">Asunto*</label>
+                                <input type="text" id="text" name="text" value="" required>
+                            <label for="producto">Producto*</label>
+                                <select id="producto" name="producto" required="">
+                                    <option value="consumidor">Muffins</option>
+                                    <option value="ventas">Cupcakes</option>
+                                </select>
+                            <label for="text">Mensaje*</label>
+                                <textarea rows="5" id="text" name="text" required></textarea>
+                            <div class="text-center">
+                                <button type="submit" class="botonFormulario">Enviar</button>
+                            <button type="reset" class="botonFormulario">Borrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 col-sm-12 text-center">
+                    <h2>Contacto por fuera</h2>
+                    <p><strong>Tel.</strong><a href="tel:+5491112345678"> +54 9 11 1234-5678</a></p>
+                    <p><strong>Email</strong><a href="mailto:info@muffcakes.com"> info@muffcakes.com</a></p>
+                    <p><strong>Facebook</strong><a href="https://www.facebook.com"> MuffcakesFB</a></p>
+                    <p><strong>Instagram</strong><a href="https://www.facebook.com"> @MuffcakesIG</a></p>
+                    <p><strong>Twitter</strong><a href="https://www.facebook.com"> @MuffcakesTW</a></p>
+                    <p><strong>#Muffcakes</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Fin Formulario - Inicio Footer-->
+
+    <footer>
+        <div class="container-fluid row grid text-center">
+            <div class="col-md-3 col-sm-3 padd">
+                <h4>Consultas</h4>
+                <a href="mailto:info@muffcakes.com"><p>info@muffcakes.com</p></a>
+            </div>
+            <div class="col-md-3 col-sm-2">
+                <a href="#"><img src="media/logo-footer.png" alt="Boton para subir" width="100px"></a>
+            </div>
+            <div class="col-md-3 col-sm-3 padd">
+                <div>
+                    <a href="https://www.facebook.com" target="_blank"><img src="media/fb-logo.png" alt="Boton página de Facebook"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="media/ig-logo.png" alt="Boton página de Instagram"></a>
+                    <a href="https://www.twitter.com" target="_blank"><img src="media/tw-logo.png" alt="Boton página de Twitter"></a>                        
+                    <div class="text-center">
+                        <p>©2021 Muffcakes</p>
+                    </div>
+                </div>
+            </div>           
+        </div>
+    </footer>
+
+    <!--Fin Footer - Fin General-->
+
+    <script src="styles/bootstrap/bootstrap.bundle.js"></script>
+
+</body>
+</html>
